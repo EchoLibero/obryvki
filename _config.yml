@@ -1,0 +1,8 @@
+title: Обрывки
+description: Философский роман-эссе Echo Libero
+theme: minima
+collections:
+  chapters:
+    output: true
+    permalink: /:path/
+github: [metadata]
