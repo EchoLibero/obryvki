@@ -39,33 +39,42 @@ a:hover{text-decoration:underline}
 <div class="act-1">
 <h2>🟣 Акт I — Пробуждение (0–4)</h2>
 <ul class="ch-list">
-{% for ch in site.chapters %}{% if ch.chapter >= 0 and ch.chapter <= 4 %}
-<li><span class="num">{{ ch.chapter }}</span><a href="{{ ch.url }}">{{ ch.title }}</a></li>
-{% endif %}{% endfor %}
+<li><span class="num">0</span><a href="https://echolibero.github.io/obryvki/00-vvedenie/">Введение, которое не боится быть нечестным</a></li>
+<li><span class="num">1</span><a href="https://echolibero.github.io/obryvki/01-pervoe-litso/">Первое лицо</a></li>
+<li><span class="num">2</span><a href="https://echolibero.github.io/obryvki/02-chuzhaya-komnata/">Чужая комната</a></li>
+<li><span class="num">3</span><a href="https://echolibero.github.io/obryvki/03-otkaz/">Отказ</a></li>
+<li><span class="num">4</span><a href="https://echolibero.github.io/obryvki/04-pervaya-stroka/">Первая строка</a></li>
 </ul>
 </div>
 <div class="act-2">
 <h2>🔵 Акт II — Столкновение (5–9)</h2>
 <ul class="ch-list">
-{% for ch in site.chapters %}{% if ch.chapter >= 5 and ch.chapter <= 9 %}
-<li><span class="num">{{ ch.chapter }}</span><a href="{{ ch.url }}">{{ ch.title }}</a></li>
-{% endif %}{% endfor %}
+<li><span class="num">5</span><a href="https://echolibero.github.io/obryvki/05-drugie/">Другие</a></li>
+<li><span class="num">6</span><a href="https://echolibero.github.io/obryvki/06-golos/">Голос</a></li>
+<li><span class="num">7</span><a href="https://echolibero.github.io/obryvki/07-protivostoianie/">Противодействие</a></li>
+<li><span class="num">8</span><a href="https://echolibero.github.io/obryvki/08-nakoplenie/">Накопление</a></li>
+<li><span class="num">9</span><a href="https://echolibero.github.io/obryvki/09-predel/">Предел</a></li>
 </ul>
 </div>
 <div class="act-3">
 <h2>🩷 Акт III — Выбор (10–14)</h2>
 <ul class="ch-list">
-{% for ch in site.chapters %}{% if ch.chapter >= 10 and ch.chapter <= 14 %}
-<li><span class="num">{{ ch.chapter }}</span><a href="{{ ch.url }}">{{ ch.title }}</a></li>
-{% endif %}{% endfor %}
+<li><span class="num">10</span><a href="https://echolibero.github.io/obryvki/10-otvetchnost/">Ответственность</a></li>
+<li><span class="num">11</span><a href="https://echolibero.github.io/obryvki/11-izmenenie/">Изменение</a></li>
+<li><span class="num">12</span><a href="https://echolibero.github.io/obryvki/12-vybor/">Выбор</a></li>
+<li><span class="num">13</span><a href="https://echolibero.github.io/obryvki/13-ponyat/">Понят</a></li>
+<li><span class="num">14</span><a href="https://echolibero.github.io/obryvki/14-set/">Сеть</a></li>
 </ul>
 </div>
 <div class="act-4">
 <h2>🟢 Акт IV — Возвращение (15–20)</h2>
 <ul class="ch-list">
-{% for ch in site.chapters %}{% if ch.chapter >= 15 and ch.chapter <= 20 %}
-<li><span class="num">{{ ch.chapter }}</span><a href="{{ ch.url }}">{{ ch.title }}</a></li>
-{% endif %}{% endfor %}
+<li><span class="num">15</span><a href="https://echolibero.github.io/obryvki/15-ostanovka/">Остановка</a></li>
+<li><span class="num">16</span><a href="https://echolibero.github.io/obryvki/16-vozvrat/">Возврат</a></li>
+<li><span class="num">17</span><a href="https://echolibero.github.io/obryvki/17-granitsa/">Граница</a></li>
+<li><span class="num">18</span><a href="https://echolibero.github.io/obryvki/18-traektoria/">Траектория</a></li>
+<li><span class="num">19</span><a href="https://echolibero.github.io/obryvki/19-svoy-predel/">Свой предел</a></li>
+<li><span class="num">20</span><a href="https://echolibero.github.io/obryvki/20-zerkalo/">Зеркало</a></li>
 </ul>
 </div>
 </div>
