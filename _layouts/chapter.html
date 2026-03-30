@@ -1,6 +1,38 @@
 ---
 layout: default
 ---
+<style>
+body{font-family:Georgia,serif;max-width:720px;margin:0 auto;padding:2rem;background:#111;color:#eee;line-height:1.85}
+.nav{display:flex;justify-content:space-between;margin-bottom:2.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav a{color:#9b8ac4;text-decoration:none;font-size:.9rem}
+.nav a:hover{text-decoration:underline}
+.nav-prev{text-align:left}
+.nav-next{text-align:right}
+.nav-home{text-align:center;flex:1}
+.chapter-body h1{font-size:1.9rem;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:2rem}
+.chapter-body p{margin-bottom:1.2rem;font-size:1rem}
+.back-link{margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06);text-align:center}
+.back-link a{color:#9b8ac4;text-decoration:none;font-size:.85rem;opacity:.5}
+</style>
+
+{% assign chs = site.chapters | sort: "chapter" %}
+{% for ch in chs %}{% if ch.path == page.path %}
+  {% assign idx = forloop.index0 %}
+  {% assign prev = nil %}{% assign next = nil %}
+  {% if idx > 0 %}{% assign pi = idx | minus: 1 %}{% assign prev = chs[pi] %}{% endif %}
+  {% if idx < forloop.length %}{% assign ni = idx | plus: 1 %}{% assign next = chs[ni] %}{% endif %}
+  <nav class="nav">
+    {% if prev %}<a href="{{ prev.url }}" class="nav-prev">← {{ prev.title }}</a>{% else %}<span></span>{% endif %}
+    <a href="https://echolibero.github.io/obryvki/" class="nav-home">Оглавление</a>
+    {% if next %}<a href="{{ next.url }}" class="nav-next">{{ next.title }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+  {% break %}
+{% endif %}{% endfor %}
+
 <article class="chapter-body">
 {{ content }}
 </article>
+
+<div class="back-link">
+<a href="https://echolibero.github.io/obryvki/">← Обрывки — Оглавление</a>
+</div>
